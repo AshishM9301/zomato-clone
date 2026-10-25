@@ -1,0 +1,48 @@
+{
+  "name": "zomato-clone-backend",
+  "version": "0.1.0",
+  "description": "Hyperlocal food delivery MVP — backend (Node.js / Express / TypeScript)",
+  "private": true,
+  "main": "dist/src/server.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/src/server.js",
+    "dev": "tsx watch src/server.ts",
+    "seed": "tsx scripts/seed.ts",
+    "migrate": "tsx scripts/migrate.ts",
+    "smoke": "tsx scripts/smoke.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "echo \"(lint not configured yet)\" && exit 0",
+    "test": "echo \"(tests not configured yet)\" && exit 0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "ioredis": "^5.4.1",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.12.0",
+    "pino": "^9.3.2",
+    "pino-http": "^10.2.0",
+    "uuid": "^10.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/cookie-parser": "^1.4.10",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/node": "^20.14.10",
+    "@types/pg": "^8.11.6",
+    "@types/uuid": "^10.0.0",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3"
+  }
+}
